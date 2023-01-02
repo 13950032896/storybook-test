@@ -11,7 +11,7 @@
 <script>
 import AsyncValidator from 'async-validator'
 export default {
-  name: 'LgFormItem',
+  name: 'FmFormItem',
   inject: ['form'],
   props: {
     label: {

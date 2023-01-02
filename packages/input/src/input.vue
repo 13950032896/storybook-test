@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'LgInput',
+  name: 'FmInput',
   inheritAttrs: false,
   props: {
     value: {

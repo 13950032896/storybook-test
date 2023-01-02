@@ -1,13 +1,13 @@
-import LgInput from '../'
+import FmInput from '../'
 
 export default {
-  title: 'LgInput',
-  component: LgInput
+  title: 'FmInput',
+  component: FmInput
 }
 
 export const Test = () => ({
-  components: { LgInput },
-  template: '<lg-input v-model="value"></lg-input>',
+  components: { FmInput },
+  template: '<fm-input v-model="value"></fm-input>',
   data () {
     return {
       value: 'admin'

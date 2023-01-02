@@ -1,28 +1,28 @@
-import LgForm from '../'
-import LgFormItem from '../../formitem'
-import LgInput from '../../input'
-import LgButton from '../../button'
+import FmForm from '../'
+import FmFormItem from '../../formitem'
+import FmInput from '../../input'
+import FmButton from '../../button'
 
 export default {
-  title: 'LgForm',
-  component: LgForm
+  title: 'FmForm',
+  component: FmForm
 }
 
 export const Login = () => ({
-  components: { LgForm, LgFormItem, LgInput, LgButton },
+  components: { FmForm, FmFormItem, FmInput, FmButton },
   template: `
-    <lg-form class="form" ref="form" :model="user" :rules="rules">
-      <lg-form-item label="用户名" prop="username">
-        <!-- <lg-input v-model="user.username"></lg-input> -->
-        <lg-input :value="user.username" @input="user.username=$event" placeholder="请输入用户名"></lg-input>
-      </lg-form-item>
-      <lg-form-item label="密码" prop="password">
-        <lg-input type="password" v-model="user.password"></lg-input>
-      </lg-form-item>
-      <lg-form-item>
-        <lg-button type="primary" @click="login">登 录</lg-button>
-      </lg-form-item>
-    </lg-form>
+    <Fm-form class="form" ref="form" :model="user" :rules="rules">
+      <Fm-form-item label="用户名" prop="username">
+        <!-- <Fm-input v-model="user.username"></Fm-input> -->
+        <Fm-input :value="user.username" @input="user.username=$event" placeholder="请输入用户名"></Fm-input>
+      </Fm-form-item>
+      <Fm-form-item label="密码" prop="password">
+        <Fm-input type="password" v-model="user.password"></Fm-input>
+      </Fm-form-item>
+      <Fm-form-item>
+        <Fm-button type="primary" @click="login">登 录</Fm-button>
+      </Fm-form-item>
+    </Fm-form>
   `,
   data () {
     return {

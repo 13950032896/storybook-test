@@ -1,7 +1,7 @@
-import LgSteps from './src/steps.vue'
+import FmSteps from './src/steps.vue'
 
-LgSteps.install = Vue => {
-  Vue.component(LgSteps.name, LgSteps)
+FmSteps.install = Vue => {
+  Vue.component(FmSteps.name, FmSteps)
 }
 
-export default LgSteps
+export default FmSteps

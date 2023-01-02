@@ -1,7 +1,7 @@
-import LgForm from './src/form.vue'
+import FmForm from './src/form.vue'
 
-LgForm.install = Vue => {
-  Vue.component(LgForm.name, LgForm)
+FmForm.install = Vue => {
+  Vue.component(FmForm.name, FmForm)
 }
 
-export default LgForm
+export default FmForm
